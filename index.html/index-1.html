@@ -1,20 +1,39 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>cục cứt yang hồ</title>
-    <meta charset="utf-8">
-    
+<title>chuahetapsu</title>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<script type="text/javascript">
+var noIsHovered = function() {
+var button = document.getElementById("no");
+
+var top = Math.floor(Math.random() * 400);
+var left = Math.floor(Math.random() * 800);
+
+button.style.top = top;
+button.style.left = left;
+}
+
+var yesIsClicked = function() {
+alert("Tao biết mày thích tao mày :vv");
+}
+
+window.onbeforeunload = function () {
+alert("Đm, định chạy à, Ấn vào đây cũng có nghĩa : Mày là chó đấy :)) ");
+}
+</script>
 </head>
+
 <body>
-  
-  <h1>bạn có bị thiểu năng không??</h1>
-  <input type="radio" name="gender">
-<button>cmó iem-)))</button>
-<input type="radio" name="gender">
-<button>khmông iem-)))</button>
-<div>
-    <a href="https://www.facebook.com/profile.php?=75548495">bấm vào để xem face sì búc crush thằng làm web</a>
-  </div>
-    
+<h1>Mày có phải là chó không ??? </h1>
+<button id="yes" onclick="yesIsClicked();" style="position: absolute; left: 100px; top: 100px; width: 100px"> Ờ, tao là chó </button>
+<button id="no" onmouseover="noIsHovered();" style="position: absolute; left: 300px; top: 100px; width: 200px"> không, không phải </button>
+<script language="JavaScript" type="text/javascript">
+window.onbeforeunload = confirmExit;
+function confirmExit()
+{
+return "Đm, định chạy à, Ấn vào đây cũng có nghĩa : Mày là chó đấy :]] .. Cơ mà chào mày, chúc mày luôn may mắn";
+}
+</script>
+
 </body>
 </html>
